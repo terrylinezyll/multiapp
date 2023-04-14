@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".IntentActivity">
+
+    <Button
+        android:id="@+id/Btn_sms"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginBottom="30dp"
+        android:backgroundTint="#4CAF50"
+        android:text="Sms"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/Btn_share"
+        app:layout_constraintEnd_toStartOf="@+id/Btn_call"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/Btn_call"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="34dp"
+        android:backgroundTint="#4CAF50"
+        android:text="Call"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/Btn_dial"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/Btn_sms"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/Btn_share"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="43dp"
+        android:backgroundTint="#4CAF50"
+        android:text="Share"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/Btn_camera"
+        app:layout_constraintEnd_toStartOf="@+id/Btn_dial"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Btn_sms" />
+
+    <Button
+        android:id="@+id/Btn_dial"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="29dp"
+        android:backgroundTint="#4CAF50"
+        android:text="Dial"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/Btn_mpesa"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/Btn_share"
+        app:layout_constraintTop_toBottomOf="@+id/Btn_call" />
+
+    <Button
+        android:id="@+id/Btn_camera"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="32dp"
+        android:backgroundTint="#4CAF50"
+        android:text="Camera"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/Btn_email"
+        app:layout_constraintEnd_toStartOf="@+id/Btn_mpesa"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Btn_share" />
+
+    <Button
+        android:id="@+id/Btn_mpesa"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="193dp"
+        android:backgroundTint="#4CAF50"
+        android:text="Mpesa"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/Btn_camera"
+        app:layout_constraintTop_toBottomOf="@+id/Btn_dial" />
+
+    <Button
+        android:id="@+id/Btn_email"
+        android:layout_width="183dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="69dp"
+        android:backgroundTint="#4CAF50"
+        android:text="Email"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Btn_camera" />
+</androidx.constraintlayout.widget.ConstraintLayout>
